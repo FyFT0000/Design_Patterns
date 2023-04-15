@@ -21,7 +21,25 @@ _Forces: Factors or trade-offs to consider when trying to addapt a design patter
 _Consecuenses: Like worse performance, selection when an when not to use them.
 
 __Pattern Lenguage (is like a new programing language, and consist of:)
-_Name: 
+_Name: Capture the gist of each pattern. Should be meanifull and memorable.
+_Context: Provides the scenario in wich use the patterns. Insight on when and where to use.
+_Problem: Describes a design challenge a pattern is addresing.
+_Solution: Speccifies the pattern in term of Structure (relationships between the elements) and Behavior (interactions between the patter elements).
+_Related patterns: List other patterns used together with other patterns. And describe the similar and diferences with other patterns.
+
+__Factory: Encapsulate objets creations. Is an objet specialized in creating other objets.
+_Problem: Uncertanties in types of objets. If you are going to decide what clase to use at run time.
+
+__Abstract Factory: Builds on the factory pattern. Also create objets.
+_Problem: The user expect to recieve a family of related objets at a given time but dont know wich family is untill run time.
+
+Scenario: Pet factory, incloudin dog and cat factory. And related products as dog and cat food. 
+Solution:
+	Abstact factory - pet factory (create objets)
+	Concrete factory - dog factory and cat factory (ofthen are singleton)
+	Concret product - Dog and dog food - Cat and cat foot.
+
+We implement the abstract factory without using inheritance, beacose python is a dinamicaly typed language, and therfore does not requiered abstract clases.
 
 
 
