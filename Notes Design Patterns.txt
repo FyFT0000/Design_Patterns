@@ -1,0 +1,54 @@
+https://www.youtube.com/watch?v=wNiMoNiQQJg
+https://www.linkedin.com/learning/python-design-patterns-14304845
+
+
+
+__Design Patterns
+_Are stablished solutions por problems that repeat a lot of times.
+_Well knowing solution to recurring problemas. 
+_Widely accepted by the software devolopment community.
+_Characteristics: Are Language neutral (can use in any OOP), Dynamic (alwayn new ones caming on), Intentional Incomplete (to promote customization).
+
+__Types of Design Patterns:
+_Creational (Polymorphism): To build objects sitematicaly. 
+_Structural (Inheritance): To establish realtionships beteen software components. To acomplish functional (what software does) and nonfunctional (how well sotware complet his job) goals.
+_Behavioral (Methods): Objets interact with each others. Deafining the protocol between this objets. Functional and nonfunctional goals.
+
+__Pattern Context where work best:
+_Participants: Classes involved to form a design pattern.
+_Quality attributes: Nonfunctional requeriments (usability, modifiability, performance).
+_Forces: Factors or trade-offs to consider when trying to addapt a design pattern, manifested in quality attributes.
+_Consecuenses: Like worse performance, selection when an when not to use them.
+
+__Pattern Lenguage (is like a new programing language, and consist of:)
+_Name: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
