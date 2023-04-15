@@ -33,13 +33,7 @@ _Problem: Uncertanties in types of objets. If you are going to decide what clase
 __Abstract Factory: Builds on the factory pattern. Also create objets.
 _Problem: The user expect to recieve a family of related objets at a given time but dont know wich family is untill run time.
 
-Scenario: Pet factory, incloudin dog and cat factory. And related products as dog and cat food. 
-Solution:
-	Abstact factory - pet factory (create objets)
-	Concrete factory - dog factory and cat factory (ofthen are singleton)
-	Concret product - Dog and dog food - Cat and cat foot.
 
-We implement the abstract factory without using inheritance, beacose python is a dinamicaly typed language, and therfore does not requiered abstract clases.
 
 
 
