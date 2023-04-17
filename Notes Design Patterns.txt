@@ -38,6 +38,15 @@ _Problem: Global variable in an objet-orientated way. In python community there 
 _Context-Scenario: A need to keep a cache information to be shared by varius elements. And keep this information in a single objet like singleton or shearing constantly in Borg objets, there is no neet to retrive the information from it original sources each time.
 _Solutions: All modules in python acts as singletons, shared by multiple objets. | Borg acces to information cache for networking acronyms and their spelled-out versions.
 
+__Builder: Solution to an anipattern called Telescoping constructor. Anipattern is the oposite of the best programing practice, and we whant to avoid. Does not relay in Polymorphism unlike Factory's.
+_Problem: Telescopic constructtor antipattern occurs when a software developer attemps to build a complex objet using an excesive number of constructors.
+_Context-Scenario: Build a car that requieres varies car parts to first be constructed and then assemble (Tires, engine, etc.)
+_Solution: Remove or reduce unecesary complexities as much as possible, partition the process in to 4 diferent roles:
+    Director: In charge of building a product.
+    Abstract Builder: Provides al the necessary Interface required in building an objet.
+    Concrete Builder: Inherite the Abstract Builder, implement the details of the interfaces for a specific type of product.
+    Product: Represent an objet being built.
+
 
 
 
