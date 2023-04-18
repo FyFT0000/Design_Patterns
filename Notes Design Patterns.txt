@@ -59,6 +59,12 @@ _Context-Scenario: Function displayin a Hello Wolrd message. And wants to add ad
 Solution: Function are objets un python, we can add aditional features to this functions using @decorator.
 _Related patterns: Adaptor, Composit, Strategy.
 
+__Proxy: When creating a higly resourses intensive objet.
+_Problem: Postpone the objet creation as long as possible unless obsolutely necessary, due to the higth resourses requirements of the objet to be created. There is a need of a placeholder that will create the objet.
+_Context-Scenario: We create an instance of a producer class only when its available because ony a fix number of producer objets can exists at a given time. The proxi is a Artist that check if the producer is available for a guest.
+_Solution: Clients interact with a proxy objet most of the time untill the resource intensive objet become available. The proxi objet is in charge of creating the resource intensive objects.
+_Related: Adaptor, Decorator.
+
 
 
 
