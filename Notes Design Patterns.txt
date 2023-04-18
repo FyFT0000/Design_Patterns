@@ -40,12 +40,18 @@ _Solutions: All modules in python acts as singletons, shared by multiple objets.
 
 __Builder: Solution to an anipattern called Telescoping constructor. Anipattern is the oposite of the best programing practice, and we whant to avoid. Does not relay in Polymorphism unlike Factory's.
 _Problem: Telescopic constructtor antipattern occurs when a software developer attemps to build a complex objet using an excesive number of constructors.
-_Context-Scenario: Build a car that requieres varies car parts to first be constructed and then assemble (Tires, engine, etc.)
+_Context-Scenario: Build a car that requieres varies car parts, to first be constructed and then assemble (Tires, engine, etc.)
 _Solution: Remove or reduce unecesary complexities as much as possible, partition the process in to 4 diferent roles:
     Director: In charge of building a product.
     Abstract Builder: Provides al the necessary Interface required in building an objet.
     Concrete Builder: Inherite the Abstract Builder, implement the details of the interfaces for a specific type of product.
     Product: Represent an objet being built.
+
+__Prototype: Clone objets acordin to a prototypical instance. Make a copy inted of building.
+_Problem: When creating or instanciating many identicall objet individually that could be expensiv in computer power. Cloning is a goog alternative since it make a copy in the memory space instead of building a new one from the usual way using constructors.
+_Context-Scenario: We are going to build cards, and mass production with the same color and options.
+_Solution: Create a prototypical instance first, and then clone it whenever you need a replica.
+_Related patterns: Abstract Factory.
 
 
 
