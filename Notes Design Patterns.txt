@@ -53,7 +53,11 @@ _Context-Scenario: We are going to build cards, and mass production with the sam
 _Solution: Create a prototypical instance first, and then clone it whenever you need a replica.
 _Related patterns: Abstract Factory.
 
-
+__Decorator: Is a structured pattern that allow users to add new features to existing objets without changin their structures.
+_Problem: Add new features to an existin objet, dinamicaly without using subclases.
+_Context-Scenario: Function displayin a Hello Wolrd message. And wants to add aditional features to decorate the text, like <blink>.
+Solution: Function are objets un python, we can add aditional features to this functions using @decorator.
+_Related patterns: Adaptor, Composit, Strategy.
 
 
 
