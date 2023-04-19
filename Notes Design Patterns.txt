@@ -71,6 +71,15 @@ _Context-Scenario: Korean and British objets that has diferent methods names to 
 _Solution: Use the adaptor patter to translate methods names between client and server.
 _Related: Bridge, decorator.
 
+__Composite: Mantein a tree data structure to represent part/whole relationships.
+_Problem: Built a recursive tree data structure, so that an element of the tree can have its own sub elements.  Menu>submenu>sub-submenu>...
+_Context-Scenario: Creating menu and submenu items, and display this using the composite patter.
+_Solution: Consist of three elements:
+    Component: Is an abstract class.
+    Child: Is a concrete class, inherits from the component class.
+    Composite: Is a concrete class, inherits from the component class, and manteins child objets by adding and removing them to and from a tree data strucure.
+
+
 
 
 
