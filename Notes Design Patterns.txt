@@ -65,7 +65,11 @@ _Context-Scenario: We create an instance of a producer class only when its avail
 _Solution: Clients interact with a proxy objet most of the time untill the resource intensive objet become available. The proxi objet is in charge of creating the resource intensive objects.
 _Related: Adaptor, Decorator.
 
-
+__Adapter: Convert the interface of a class in to anotherone the client is expeting.
+_Problem: The interfaces are incompatible between a client and a server.
+_Context-Scenario: Korean and British objets that has diferent methods names to speaking. The client want to use a uniform interface name for the two of the objets.
+_Solution: Use the adaptor patter to translate methods names between client and server.
+_Related: Bridge, decorator.
 
 
 
