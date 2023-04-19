@@ -79,7 +79,19 @@ _Solution: Consist of three elements:
     Child: Is a concrete class, inherits from the component class.
     Composite: Is a concrete class, inherits from the component class, and manteins child objets by adding and removing them to and from a tree data strucure.
 
+__Bridge: Separate the abstraction into two different class hierarchies. Helps untangle an unecesary complicated class hierarchy, specially when implementation specific classes are mixed with implementation independent classes.
+_Problem: There are two parallel or diagonal abstractions. One is implementation specific, the other is implementation independent.
+_Context-Scenario:
+    Implementation independent circle abstraction: Defining the propierties if a circle and scaling it.
+    Implementation dependant circle abstraction: How to draw a circle.
+_Solution: Avoiding abstracting both implementation specific and independent classes in a single class hierarchy. Separate the abstraction into two different class hierarchies.
+_Related: Factory, Adapter.
 
+__Observer: stablished a one to many relationship between a subjet and multiple observers.
+_Problem: A subjet need to be monitored, another observer objet sould be notified when there is a change in the subjet.
+_Context-Scenario: Keep track of the core temperature of reactors at a power plant, and if there is a change in the core temperature, registered observers must be notified.
+_Solution: Use an abstract class called Subjet, wich is the interface that allows operations such as attaching, detaching and notifaing observers. Also is needed a Concrete subjet classes inheritance for the abstract subjet class.
+_Related: Sibgleton.
 
 
 
