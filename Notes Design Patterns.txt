@@ -98,6 +98,12 @@ _Problem: Some times is necessary to add new operations dynamically to existing 
 _Context-Scenario: We use a house class, visitors include an HVAC specialist (visitor type 1) and an Electrician (visitor type 2).
 _Solution: The visitor pattern represent new operations to be performed on the varius elements on an existing class hierarchy. Visitor can also Provides operations on a composite objet.
 
+__Iterator: Allows a client to have secuential acces to the elements of an aggregate objet without exposing its underlying structure.
+_Problem: Some programers overcrowd the traversal interfaces of an aggregate objet for every possible way of iteration.
+_Context-Scenario: We are building our own iterator that takes advantage of a built-in python iterator called zip(). The iterator goes through a list of German country words. It will iterate inly up to a certain pint base on client input.
+_Solution: The Iterator isolate acces and transveral features from the aggregate objet. It also provides an interface for accesing the elements of an aggregate objet. An Iterator keep track of the objets being traversed. The solution is to make the aggregate objet create an iterator a client.
+_Related: Composit pattern.
+
 
 
 
