@@ -104,6 +104,11 @@ _Context-Scenario: We are building our own iterator that takes advantage of a bu
 _Solution: The Iterator isolate acces and transveral features from the aggregate objet. It also provides an interface for accesing the elements of an aggregate objet. An Iterator keep track of the objets being traversed. The solution is to make the aggregate objet create an iterator a client.
 _Related: Composit pattern.
 
+__Strategy: Offers a family of interchangable algorithms to a client.
+_Problem: The need for dynamically changing the behavior of an objet.
+_Context-Scenario:  We offer our strategy class with a default set of behaviors, when there is the need we provide another variaton of the strategy class by dinamicaly replacing its default method with a new one.
+_Solution: Python allows adding method dynamically by importing the types module.
+
 
 
 
