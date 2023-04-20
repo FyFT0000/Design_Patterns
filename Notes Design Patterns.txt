@@ -93,6 +93,11 @@ _Context-Scenario: Keep track of the core temperature of reactors at a power pla
 _Solution: Use an abstract class called Subjet, wich is the interface that allows operations such as attaching, detaching and notifaing observers. Also is needed a Concrete subjet classes inheritance for the abstract subjet class.
 _Related: Sibgleton.
 
+__Visitor: Allows editing new features to an existing class hierarchy without changin it.
+_Problem: Some times is necessary to add new operations dynamically to existing classes with minimal changes.
+_Context-Scenario: We use a house class, visitors include an HVAC specialist (visitor type 1) and an Electrician (visitor type 2).
+_Solution: The visitor pattern represent new operations to be performed on the varius elements on an existing class hierarchy. Visitor can also Provides operations on a composite objet.
+
 
 
 
