@@ -109,7 +109,11 @@ _Problem: The need for dynamically changing the behavior of an objet.
 _Context-Scenario:  We offer our strategy class with a default set of behaviors, when there is the need we provide another variaton of the strategy class by dinamicaly replacing its default method with a new one.
 _Solution: Python allows adding method dynamically by importing the types module.
 
-
+__Chain of Responsability: Opens up varius possibilities of processing for a given request. Decouples the request and its processing.
+_Problem: Many different types of processing need to be done depending on the request.
+_Context-Scenario: We receive an integer value and use diferent handlers to find out its range.
+_Solution: We use an abstract Handler that stores a succesor that will handre a request if the current handeler doesen't handle ir. Concrete handeler check if they can handle the request. If they can they anddle it and return a true value indicating that the request was handled.
+_Related: Composit.
 
 
 
