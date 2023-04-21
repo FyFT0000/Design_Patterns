@@ -3,8 +3,7 @@ https://www.linkedin.com/learning/python-design-patterns-14304845
 
 
 
-__Design Patterns
-_Are stablished solutions por problems that repeat a lot of times.
+___Design Patterns: Are stablished solutions por problems that repeat a lot of times.
 _Well knowing solution to recurring problemas. 
 _Widely accepted by the software devolopment community.
 _Characteristics: Are Language neutral (can use in any OOP), Dynamic (alwayn new ones caming on), Intentional Incomplete (to promote customization).
@@ -115,9 +114,21 @@ _Context-Scenario: We receive an integer value and use diferent handlers to find
 _Solution: We use an abstract Handler that stores a succesor that will handre a request if the current handeler doesen't handle ir. Concrete handeler check if they can handle the request. If they can they anddle it and return a true value indicating that the request was handled.
 _Related: Composit.
 
-
-
-
+___Consistency Principle: Same problem - Same solution (With minimal modifiation of code)
+_Benefit:
+    -Decrease in errors, since the same pice of code us used over and over egain.
+    -Increase in detecting errors.
+    -Cost saving
+_Software Architecture: Is a larger scale way of accomplishing consistency, and try to stick to it.
+    -Identifying a pattern to be used throughout software consistently.
+_Frameworks: Consist of a collection of design patterns put together in a specific fashion to acomplish a particular goal.
+    -Software security, web, etc.
+_Completeness: How much a software solition meets its requirements. Usualy design patterns meet the Baseline requirements (remember pattern design are intentionally under defined to allow potential customization).
+_Correctness: To obtain correct result, and is specially vital in Mission-critical system (power plant, water treatment facilities)
+_Coupling: How many different elements of your software are related (degree to wich the software element are conected). If coupling is strong, changes in one of them affect the others significantly, wich means a lot of aditional work.
+_Cohesion: How independent a software component is. More cohesion and less coupling is one of the goals of design patterns.
+_Simplicity and Geneality Trade-Offs: Is waht design patterns consider, attempt to satisfy too many requirement, but not to become too complicated for it to be truly useful. Also important to be considered for reusability purposes.
+_Design patter should be simple enough to be quickly mastered and highly usable for practitioners. Conisder use dessign patters when you ensure that you're actually improving the quality of your software by adapting them.
 
 
 
